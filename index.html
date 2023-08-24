@@ -1,26 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Starlight Robotics</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Starlight Robotics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #002b36;
+            font-family: 'Orbitron', sans-serif;
+            color: #657b83;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .column {
+            width: 25%;
+            text-align: center;
+        }
+
+        .center-column {
+            width: 50%;
+        }
+
+        a {
+            color: #CCFFFF;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #eeeeFF;
+            text-decoration: underline;
+        }
+
+        h1, h2 {
+            color: #657b83;
+        }
+
+        img {
+            width: 350px;
+        }
+
+    </style>
 </head>
 <body>
-	<div class="container">
-		<div class="links">
-			<h2>Links</h2>
-			<!-- Add your links here -->
-		</div>
-		<div class="content">
-			<h1>Eyes are for seeing.<br>Not for being seen.</h1>
-			<img src="tree.png" alt="Tree">
-		</div>
-		<div class="about">
-			<h2>About</h2>
-			<p>This is an e-zine project for Starlight Robotics, providing open-source scripts for robots.</p>
-		</div>
-	</div>
+    <div class="container">
+        <div class="column">
+            <h1>Links</h1>
+        </div>
+        <div class="center-column">
+            <h2>Eyes are for seeing.<br>Not for being seen.</h2>
+            <img src="tree.png" alt="Tree">
+        </div>
+        <div class="column">
+            <h1>About</h1>
+            <p>This is an e-zine project.</p>
+        </div>
+    </div>
 </body>
 </html>
