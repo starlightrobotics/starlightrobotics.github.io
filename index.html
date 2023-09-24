@@ -11,13 +11,25 @@
             color: #000000;
             margin: 0;
         }
-        
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2% 5%;
+        }
+
+        .header h2 {
+            flex-grow: 2;
+            text-align: center;
+        }
+
         .container {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: start; 
-            padding: 2% 5%; 
+            padding: 0% 5%; 
         }
 
         .column {
@@ -45,9 +57,9 @@
             color: #000000;
         }
 
-        img {
-            width: 350px;
-            margin-bottom: 20px; /* Added some space below the logo */
+        img.logo {
+            width: 100px; /* Reduced the logo size */
+            margin: 0;
         }
 
         .links {
@@ -63,8 +75,11 @@
 </head>
 
 <body>
+    <div class="header">
+        <img src="images/logo.png" alt="Starlight Robotics Logo" class="logo">
+        <h2>Explore. Discover. Shine.</h2>
+    </div>
     <div class="container">
-        <img src="images/logo.png" alt="Starlight Robotics Logo">
         <div class="column">
             <h1>Links</h1>
             <ul class="links">
@@ -75,7 +90,6 @@
             </ul>
         </div>
         <div class="center-column">
-            <h2>Explore. Discover. Shine.</h2>
             <p>At Starlight Robotics, we believe in the power of discovery. Dive into a world where robots and AI not only exist but thrive, guiding the way to a brighter future.</p>
         </div>
         <div class="column">
