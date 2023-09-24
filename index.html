@@ -1,55 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starlight Robotics</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <style>
         body {
-            background-color: #FFFFFF;
             font-family: 'Raleway', sans-serif;
             color: #000000;
-            margin: 0;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2% 5%;
-        }
-
-        .header h2 {
-            flex-grow: 2;
-            text-align: center;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: start; 
-            padding: 0% 5%; 
-        }
-
-        .column {
-            width: 25%;
-            text-align: center;
-        }
-
-        .center-column {
-            width: 50%;
-        }
-
-        a {
-            color: #333333;
-            font-size: 18px;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #555555;
-            text-decoration: underline;
+            background-color: #f8f9fa;
         }
 
         h1, h2 {
@@ -57,33 +21,45 @@
             color: #000000;
         }
 
-        img.logo {
-            width: 100px; /* Reduced the logo size */
-            margin: 0;
+        a {
+            color: #007bff;
+            font-size: 18px;
+            text-decoration: none;
         }
 
-        .links {
-            list-style-type: none;
-            padding: 0;
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        .logo {
+            width: 300px;
+        }
+
+        .header-text {
+            flex-grow: 2;
+            text-align: center;
+            margin: 20px 0;
         }
 
         .links li {
             margin-bottom: 10px;
         }
-
     </style>
 </head>
 
 <body>
-    <div class="header" alight="left">
-        <img src="images/logo.png" alt="Starlight Robotics Logo" width=300>
-        <h2>Explore. Discover. Shine.</h2>
+
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <img src="images/logo.png" alt="Starlight Robotics Logo" class="logo">
+        <h2 class="header-text">Explore. Discover. Shine.</h2>
     </div>
-    <div class="container">
-        <div class="column">
+
+    <div class="row">
+        <div class="col-md-3">
             <h1>Links</h1>
-            <ul class="links">
-                
+            <ul class="list-unstyled links">
                 <li><a href="https://github.com/starlightrobotics/starlight-sensing">Community</a></li>
                 <li><a href="https://github.com/starlightrobotics/starlight-sensing">Mission</a></li>
                 <li><a href="https://github.com/starlightrobotics/starlight-sensing">Automation</a></li>
@@ -92,28 +68,26 @@
                 <li><a href="https://github.com/starlightrobotics/starlight-sensing">Team</a></li>
             </ul>
         </div>
-        <div class="center-column">
-            <p>At Starlight Robotics, we believe in the power of discovery and community. 
-                Dive into a world where robots, AI, and passionate learners co-exist. 
-                Our mission is rooted in education, inclusivity, and security. 
-                Everyone, from curious beginners to seasoned experts, is welcome to be part of our journey.</p>
-            
-            <p>At Starlight Robotics, we envision a future where the wonder of robotics and artificial intelligence is accessible to all. 
-                Our mission is to illuminate the path of discovery, making it friendly and inclusive for enthusiasts of every background and skill level. 
-                Through open-source collaboration, we champion the sharing of knowledge, always with an unwavering commitment to security and ethical practice. 
-                Together, in this community, we strive to learn, innovate, and shine brightly in the ever-evolving technological cosmos.</p>
-        </div>
-        <div class="column">
-            <h1>About</h1>
-            <p>Starlight Robotics is an educational project, fostering a spirit of learning and exploration. 
-                We aim to cultivate a community of discoverers and innovators. 
-                We ensure that fun meets cyber-safety in the world of electronics and robotics.</p>
 
-            
+        <div class="col-md-6">
+            <p>At Starlight Robotics, we believe in the power of discovery and community. Dive into a world where robots, AI, and passionate learners co-exist. Our mission is rooted in education, inclusivity, and security. Everyone, from curious beginners to seasoned experts, is welcome to be part of our journey.</p>
+            <p>At Starlight Robotics, we envision a future where the wonder of robotics and artificial intelligence is accessible to all. Our mission is to illuminate the path of discovery, making it friendly and inclusive for enthusiasts of every background and skill level. Through open-source collaboration, we champion the sharing of knowledge, always with an unwavering commitment to security and ethical practice. Together, in this community, we strive to learn, innovate, and shine brightly in the ever-evolving technological cosmos.</p>
+        </div>
+
+        <div class="col-md-3">
+            <h1>About</h1>
+            <p>Starlight Robotics is an educational project, fostering a spirit of learning and exploration. We aim to cultivate a community of discoverers and innovators. We ensure that fun meets cyber-safety in the world of electronics and robotics.</p>
+
             <h2>Contact</h2>
-            Instagram: <a href="https://www.instagram.com/starlightrobotics/" target="_blank">@starlightrobotics</a>
+            <p>Instagram: <a href="https://www.instagram.com/starlightrobotics/" target="_blank">@starlightrobotics</a></p>
         </div>
     </div>
-</body>
+</div>
 
+<!-- Optional: Adding jQuery and Bootstrap JS for potential interactive features -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
 </html>
