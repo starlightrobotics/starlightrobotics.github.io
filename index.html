@@ -10,53 +10,57 @@
 
 
     <style>
-        :root {
-            --primary-color: #000;
-            --secondary-color: #666;
-        }
+    :root {
+        --primary-color: #F2F3F5; /* Light colored text */
+        --secondary-color: #B0B6BF; /* Slightly darker text for contrast */
+        --background-color: #131722; /* Dark background color */
+        --card-background-color: #1E2532; /* Slightly lighter for distinction */
+    }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--primary-color);
-            background-color: #FFF;
-            line-height: 1.7;
-        }
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: var(--primary-color);
+        background-color: var(--background-color);
+        line-height: 1.7;
+    }
 
-        h1, h2, h3, h4, h5 {
-            font-weight: 500;
-            color: var(--primary-color);
-        }
+    h1, h2, h3, h4, h5 {
+        font-weight: 500;
+        color: var(--primary-color);
+    }
 
-        a {
-            color: var(--primary-color);
-            transition: color 0.3s;
-        }
+    a {
+        color: var(--primary-color);
+        transition: color 0.3s;
+    }
 
-        a:hover {
-            color: var(--secondary-color);
-            text-decoration: none;
-        }
+    a:hover {
+        color: var(--secondary-color);
+        text-decoration: none;
+    }
 
-        .logo {
-            width: 250px;
-            margin-bottom: 20px;
-        }
+    .logo {
+        width: 250px;
+        margin-bottom: 20px;
+    }
 
-        .header-text {
-            margin: 20px 0;
-            font-weight: 300;
-            font-size: 24px;
-        }
+    .header-text {
+        margin: 20px 0;
+        font-weight: 300;
+        font-size: 24px;
+    }
 
-        .card {
-            border: none;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-        }
+    .card {
+        background-color: var(--card-background-color);
+        border: none;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
 
-        .card h1, .card h2 {
-            font-weight: 700;
-        }
-    </style>
+    .card h1, .card h2 {
+        font-weight: 700;
+    }
+</style>
+
 </head>
 
 <body>
@@ -65,7 +69,7 @@
     <div class="text-center mb-5">
         <picture>
            <source srcset="images/logo_black.png" media="(prefers-color-scheme: dark)">
-           <img src="images/logo.png" alt="Starlight Robotics Logo" class="logo">
+           <img src="images/logo_black_clipdrop-background-removal.png" alt="Starlight Robotics Logo" class="logo">
         </picture>
 
         <h2 class="header-text">Explore. Discover. Shine.</h2>
