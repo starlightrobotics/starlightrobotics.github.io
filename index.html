@@ -5,98 +5,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starlight Robotics</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.5.0/css/bootstrap.min.css">
 
-   <style>
-    body {
-        font-family: 'Raleway', sans-serif;
-        color: #000; /* Black text */
-        background-color: #FFF; /* White background */
-    }
+    <style>
+        :root {
+            --primary-color: #000;
+            --secondary-color: #666;
+        }
 
-    h1, h2 {
-        font-family: 'Orbitron', sans-serif;
-        color: #000; /* Black titles */
-    }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary-color);
+            background-color: #FFF;
+            line-height: 1.7;
+        }
 
-    a {
-        color: #000; /* Black links */
-        font-size: 18px;
-        text-decoration: none;
-    }
+        h1, h2, h3, h4, h5 {
+            font-weight: 500;
+            color: var(--primary-color);
+        }
 
-    a:hover {
-        color: #666; /* Slightly lighter black on hover */
-        text-decoration: underline; /* Underline for clarity on hover */
-    }
+        a {
+            color: var(--primary-color);
+            transition: color 0.3s;
+        }
 
-    .logo {
-        width: 300px;
-    }
+        a:hover {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
 
-    .header-text {
-        flex-grow: 2;
-        text-align: center;
-        margin: 20px 0;
-    }
+        .logo {
+            width: 250px;
+            margin-bottom: 20px;
+        }
 
-    .links li {
-        margin-bottom: 10px;
-    }
+        .header-text {
+            margin: 20px 0;
+            font-weight: 300;
+            font-size: 24px;
+        }
 
-    p {
-        font-size: 16px; /* Slightly larger font for readability */
-        line-height: 1.5; /* Spaced out for better readability */
-    }
-</style>
+        .card {
+            border: none;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        }
 
-
+        .card h1, .card h2 {
+            font-weight: 700;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="container mt-5">
-    <div class="text-center mb-4">
+<div class="container my-5">
+    <div class="text-center mb-5">
         <img src="images/logo.png" alt="Starlight Robotics Logo" class="logo">
         <h2 class="header-text">Explore. Discover. Shine.</h2>
     </div>
 
     <div class="row">
         <div class="col-md-3">
-            <h1>Links</h1>
-            <ul class="list-unstyled links">
-                <li><a href="https://github.com/starlightrobotics/starlight-sensing">Community</a></li>
-                <li><a href="https://github.com/starlightrobotics/starlight-sensing">Mission</a></li>
-                <li><a href="https://github.com/starlightrobotics/starlight-sensing">Automation</a></li>
-                <li><a href="https://github.com/starlightrobotics/starlight-sensing">Sensors</a></li>
-                <li><a href="https://github.com/starlightrobotics/starlight-sensing">Writeups</a></li>
-                <li><a href="https://github.com/starlightrobotics/starlight-sensing">Team</a></li>
-            </ul>
+            <div class="card p-4 mb-4">
+                <h1>Links</h1>
+                <ul class="list-unstyled mt-3">
+                    <h1>Links</h1>
+                    <ul class="list-unstyled links">
+                        <li><a href="https://github.com/starlightrobotics/starlight-sensing">Community</a></li>
+                        <li><a href="https://github.com/starlightrobotics/starlight-sensing">Mission</a></li>
+                        <li><a href="https://github.com/starlightrobotics/starlight-sensing">Automation</a></li>
+                        <li><a href="https://github.com/starlightrobotics/starlight-sensing">Sensors</a></li>
+                        <li><a href="https://github.com/starlightrobotics/starlight-sensing">Writeups</a></li>
+                        <li><a href="https://github.com/starlightrobotics/starlight-sensing">Team</a></li>
+                    </ul>
+                </ul>
+            </div>
         </div>
 
         <div class="col-md-6">
-            <p>At Starlight Robotics, we believe in the power of discovery and community. Dive into a world where robots, AI, and passionate learners co-exist. Our mission is rooted in education, inclusivity, and security. Everyone, from curious beginners to seasoned experts, is welcome to be part of our journey.</p>
-            <p>At Starlight Robotics, we envision a future where the wonder of robotics and artificial intelligence is accessible to all. Our mission is to illuminate the path of discovery, making it friendly and inclusive for enthusiasts of every background and skill level. Through open-source collaboration, we champion the sharing of knowledge, always with an unwavering commitment to security and ethical practice. Together, in this community, we strive to learn, innovate, and shine brightly in the ever-evolving technological cosmos.</p>
-
-            <p><img width=500 src="images/cute_space_robots.jpeg"></p>
+            <div class="card p-4 mb-4">
+                <p>At Starlight Robotics, we believe in the power of discovery and community. Dive into a world where robots, AI, and passionate learners co-exist. Our mission is rooted in education, inclusivity, and security. Everyone, from curious beginners to seasoned experts, is welcome to be part of our journey.</p>
+                <p>At Starlight Robotics, we envision a future where the wonder of robotics and artificial intelligence is accessible to all. Our mission is to illuminate the path of discovery, making it friendly and inclusive for enthusiasts of every background and skill level. Through open-source collaboration, we champion the sharing of knowledge, always with an unwavering commitment to security and ethical practice. Together, in this community, we strive to learn, innovate, and shine brightly in the ever-evolving technological cosmos.</p>
+    
+                <p><img width=500 src="images/cute_space_robots.jpeg"></p>
+            </div>
         </div>
 
         <div class="col-md-3">
-            <h1>About</h1>
-            <p>Starlight Robotics is an educational project, fostering a spirit of learning and exploration. We aim to cultivate a community of discoverers and innovators. We ensure that fun meets cyber-safety in the world of electronics and robotics.</p>
-
-            <h2>Contact</h2>
-            <p>Instagram: <a href="https://www.instagram.com/starlightrobotics/" target="_blank">@starlightrobotics</a></p>
+            <div class="card p-4">
+                <h1>About</h1>
+                <p>Starlight Robotics is an educational project, fostering a spirit of learning and exploration. We aim to cultivate a community of discoverers and innovators. We ensure that fun meets cyber-safety in the world of electronics and robotics.</p>
+    
+                <h2>Contact</h2>
+                <p>Instagram: <a href="https://www.instagram.com/starlightrobotics/" target="_blank">@starlightrobotics</a></p>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- Optional: Adding jQuery and Bootstrap JS for potential interactive features -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Bootstrap JS, and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.5.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>
+
+
+
+
+
+
+
