@@ -14,36 +14,34 @@
 
     <style>
     :root {
-        --primary-color: #F2F3F5; /* Light colored text */
-        --secondary-color: #B0B6BF; /* Slightly darker text for contrast */
-        --background-color: #131722; /* Dark background color */
-        --card-background-color: #1E2532; /* Slightly lighter for distinction */
-    }
+    --primary-color: #D4AF37; /* Gold colored text */
+    --background-color: #000000; /* Pure Black background */
+    --card-background-color: #1E2532; /* Consider changing this to a darker shade if necessary */
+}
 
 body {
-    font-family: 'Orbitron', sans-serif; /* Updated the font family */
+    font-family: 'Orbitron', sans-serif;
     color: var(--primary-color);
-       background-color: #031D31; /* Deep Blue background for cyberpunk feel */
+    background-color: var(--background-color);
     line-height: 1.8;
 }
 
 h1, h2, h3, h4, h5 {
-    font-weight: 500;
-    color: #87CEEB;
-    letter-spacing: 1.2px; /* Adding a slight letter-spacing for a more futuristic feel */
+    color: var(--primary-color); /* Apply the gold color to headings */
 }
 
-h1 {
-    font-size: 2.5em; /* Adjusting font sizes for headings */
+a {
+    color: var(--primary-color); /* Apply the gold color to links */
 }
 
-h2 {
-    font-size: 2em;
+.card {
+    background-color: var(--card-background-color);
+    border: 1px solid var(--primary-color); /* Optional: add a golden border */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Increase the opacity for better visibility on a black background */
 }
 
-h3 {
-    font-size: 1.75em;
-}
+/* Add any additional gold styling as needed */
+
     a {
         font-family: 'Poppins', sans-serif;
         color: #87CEEB;
@@ -67,11 +65,6 @@ h3 {
         font-size: 24px;
     }
 
-    .card {
-        background-color: #031D31;
-        border: none;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    }
 
             p {
                 font-family: 'Poppins', sans-serif;
