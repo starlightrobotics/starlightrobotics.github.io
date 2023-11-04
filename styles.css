@@ -23,7 +23,7 @@ body {
 .site-header {
     /* Assume that your header has a certain height */
     height: 300px; /* Adjust to your preference */
-    background-image: url('images/city.jpg');
+    background-image: url('images/city_2.jpg');
     background-size: cover; /* This will ensure the image covers the entire header */
     background-repeat: no-repeat;
     background-attachment: scroll; /* This will make the background scroll with the page */
