@@ -83,10 +83,16 @@ footer {
 }
 
 /* Ensure all the text aligns properly with your design */
-p, h1, h2, h3, ul, li, a {
+h1, h2, h3, ul, li, a {
     text-align: center; /* Center text for a focused layout */
     /* Add any additional styles needed for typography */
 }
+
+p {
+    text-align: center; /* Center text for a focused layout */
+                font-family: 'Poppins', sans-serif;
+        color: var(--primary-color);
+    }
 
 /* Responsive Design: Adjustments for smaller screens */
 @media (max-width: 768px) {
