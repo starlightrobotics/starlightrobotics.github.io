@@ -115,7 +115,7 @@ footer {
 /* Ensure all the text aligns properly with your design */
 h1, h2, h3, ul, li {
     text-align: center; /* Center text for a focused layout */
-     font-family: 'Poppins', sans-serif;
+     font-family: 'Orbitron', sans-serif;
         color: var(--primary-color);
 }
 
