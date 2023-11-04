@@ -30,6 +30,12 @@ body {
     background-position: center center; /* This centers the background image */
 }
 
+.site-content {
+    width: 800px; /* Set the width to 800px */
+    margin: 0 auto; /* Center the content block horizontally */
+    max-width: 100%; /* Ensure that it doesn't overflow on smaller screens */
+}
+
 .logo {
     flex: 1; /* Adjust as needed */
 }
