@@ -22,7 +22,7 @@ body {
 
 .site-header {
     /* Assume that your header has a certain height */
-    height: 300px; /* Adjust to your preference */
+    height: 500px; /* Adjust to your preference */
     background-image: url('images/city_2.jpg');
     background-size: cover; /* This will ensure the image covers the entire header */
     background-repeat: no-repeat;
@@ -41,18 +41,14 @@ body {
 }
 
 /* Menu bar styles */
-.menu-bar {
+.site-nav {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.menu-bar li {
-    padding: 0 1rem; /* Adjust spacing between menu items */
-}
-
-.menu-bar a {
+.site-nav a {
     text-decoration: none;
     color: var(--primary-color);
 }
