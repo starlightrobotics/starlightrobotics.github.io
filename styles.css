@@ -57,6 +57,40 @@ body {
     color: var(--primary-color);
 }
 
+/* Add any additional gold styling as needed */
+
+   a {
+    font-family: 'Orbitron', serif; /* Example of a light serif font */
+    color: #CAA472; /* Gold color for a luxurious feel */
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    text-decoration: none;
+    padding-left: 24px;
+}
+
+a:hover {
+    color: #FFF;
+    font-weight: 500;
+}
+
+a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url('icon-path.svg'); /* Custom icon for each link */
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover:before {
+    transform: translateY(-50%) scale(1.1);
+}
+
 /* Central text area styles */
 .central-text {
     max-width: 800px; /* Set the max-width for the central text */
