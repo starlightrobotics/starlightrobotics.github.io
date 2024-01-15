@@ -62,7 +62,7 @@ body {
 
    a {
     font-family: 'Orbitron', serif; /* Example of a light serif font */
-    color: #CAA472; /* Gold color for a luxurious feel */
+    color: var(--primary-color); /* Gold color for a luxurious feel */
     font-weight: 400;
     transition: all 0.3s ease-in-out;
     position: relative;
