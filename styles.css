@@ -1,20 +1,15 @@
-    :root {
-    --primary-color: #0ff; /* Neon Blue */
-    --secondary-color: #f0f; /* Neon Pink */
-    --background-color: #000000; /* Pure Black background */
-        /* 
-    --primary-color: #D4AF37; /* Gold colored text 
-    --background-color: #000000; /* Pure Black background 
-    --card-background-color: #000000; /* Consider changing this to a darker shade if necessary 
-        */
+:root {
+    /* Updated Color Scheme */
+    --primary-color: #5F6368; /* Dark Gray for Text */
+    --secondary-color: #1A73E8; /* Modern Blue for Highlights */
+    --background-color: #FFFFFF; /* Light Background */
+    --card-background-color: #F5F5F5; /* Light Gray for Cards and Sections */
 }
 
 body {
-    background-color: black;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: var(--background-color);
+    color: var(--primary-color); /* Default text color */
+    font-family: 'Arial', sans-serif; /* A more neutral font */
 }
 
 /* Container for the logo and menu bar */
@@ -26,13 +21,10 @@ body {
 }
 
 .site-header {
-    /* Assume that your header has a certain height */
-    height: 500px; /* Adjust to your preference */
-    background-image: url('images/city_2.jpg');
-    background-size: cover; /* This will ensure the image covers the entire header */
-    background-repeat: no-repeat;
-    background-attachment: scroll; /* This will make the background scroll with the page */
-    background-position: center center; /* This centers the background image */
+    /* Adjust the header image or remove it for a simpler header */
+    background-image: none; /* Consider removing the image for a cleaner look */
+    background-color: var(--card-background-color);
+    /* Other background properties can be adjusted or removed */
 }
 
 .site-content {
@@ -47,6 +39,7 @@ body {
 
 /* Menu bar styles */
 .site-nav {
+    color: var(--secondary-color); /* Modern blue for links */
     display: flex;
     list-style: none;
     margin: 0;
@@ -61,8 +54,8 @@ body {
 /* Add any additional gold styling as needed */
 
    a {
-    font-family: 'Orbitron', serif; /* Example of a light serif font */
-    color: var(--secondary-color); /* Gold color for a luxurious feel */
+    font-family: 'Arial', sans-serif; /* Updated to a more standard font */
+    color: var(--secondary-color); /* Modern blue for a luxurious feel */
     font-weight: 400;
     transition: all 0.3s ease-in-out;
     position: relative;
@@ -71,7 +64,7 @@ body {
 }
 
 a:hover {
-    color: #FFF;
+    color: var(--primary-color);
     font-weight: 500;
 }
 
@@ -94,18 +87,18 @@ a:hover:before {
 
 /* Central text area styles */
 .central-text {
+    background: var(--card-background-color);
+    color: var(--primary-color);
     max-width: 800px; /* Set the max-width for the central text */
     margin: 2rem auto; /* Centers the block with automatic horizontal margins */
     padding: 1rem;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
-    color: white;
     border-radius: 10px; /* Optional rounded corners */
 }
 
 /* Footer styles */
 footer {
     background-color: var(--card-background-color);
-    color: white;
+    color: var(--primary-color);
     text-align: center;
     padding: 1rem 0;
 }
@@ -114,20 +107,20 @@ footer {
 .about-section {
     padding: 1rem;
     margin-top: 2rem;
-    border-top: 1px solid var(--primary-color); /* Separates the "About" from the rest of the content */
+    border-top: 1px solid var(--secondary-color);
 }
 
 /* Ensure all the text aligns properly with your design */
 h1, h2, h3, ul, li {
+    font-family: 'Arial', sans-serif;
+    color: var(--primary-color);
     text-align: center; /* Center text for a focused layout */
-     font-family: 'Orbitron', sans-serif;
-        color: var(--secondary-color);
 }
 
 p {
     text-align: center; /* Center text for a focused layout */
-                font-family: 'Poppins', sans-serif;
-        color: var(--primary-color);
+    font-family: 'Arial', sans-serif;
+    color: var(--primary-color);
     }
 
 /* Responsive Design: Adjustments for smaller screens */
