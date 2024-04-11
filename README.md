@@ -1,5 +1,5 @@
 # Starlight Robotics
-* [Official Website](starlightrobotics.github.io)
+* [Official Website](https://starlightrobotics.github.io)
 * [Instagram](https://www.instagram.com/starlightrobotics/)
 * [Reddit](https://www.reddit.com/r/starlightrobotics/)
 
