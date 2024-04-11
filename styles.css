@@ -51,6 +51,11 @@ body {
     color: var(--primary-color);
 }
 
+.site-nav a:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
 /* Add any additional gold styling as needed */
 
    a {
