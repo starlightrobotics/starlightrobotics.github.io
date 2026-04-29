@@ -1,7 +1,7 @@
 # Starlight Robotics
 * [Official Website](https://starlightrobotics.github.io)
 * [Instagram](https://www.instagram.com/starlightrobotics/)
-* [Official Subreddit](https://www.reddit.com/r/starlightrobotics/)
+* [r/starlightrobotics](https://www.reddit.com/r/starlightrobotics/)
 
 Starlight Robotics is an initiative for the accessibility of knowledge for AI-based tools.
 
