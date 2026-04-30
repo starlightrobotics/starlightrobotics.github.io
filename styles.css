@@ -1,145 +1,139 @@
 :root {
-    /* Updated Color Scheme */
-    --primary-color: #5F6368; /* Dark Gray for Text */
-    --secondary-color: #1A73E8; /* Modern Blue for Highlights */
-    --background-color: #FFFFFF; /* Light Background */
-    --card-background-color: #F5F5F5; /* Light Gray for Cards and Sections */
+    --bg: #ffffff;
+    --text: #121212;
+    --muted: #525252;
+    --line: #e8e8e8;
+    --surface: #fafafa;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--primary-color); /* Default text color */
-    font-family: 'Arial', sans-serif; /* A more neutral font */
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.6;
 }
 
-/* Container for the logo and menu bar */
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem; /* Adjust as needed */
+.site-shell {
+    width: min(1080px, 92vw);
+    margin: 0 auto;
 }
 
 .site-header {
-    /* Adjust the header image or remove it for a simpler header */
-    background-image: none; /* Consider removing the image for a cleaner look */
-    background-color: var(--card-background-color);
-    /* Other background properties can be adjusted or removed */
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(8px);
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
 }
 
-.site-content {
-    width: 1000px; /* Set the width to 800px */
-    margin: 0 auto; /* Center the content block horizontally */
-    max-width: 100%; /* Ensure that it doesn't overflow on smaller screens */
-}
-
-.logo {
-    flex: 1; /* Adjust as needed */
-}
-
-/* Menu bar styles */
-.site-nav {
-    color: var(--secondary-color); /* Modern blue for links */
+.nav-shell {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 0.9rem 0;
+}
+
+.brand img {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.site-nav a,
+a {
+    color: var(--text);
+    text-decoration: none;
 }
 
 .site-nav a {
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
-.site-nav a:hover {
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-/* Add any additional gold styling as needed */
-
-   a {
-    font-family: 'Arial', sans-serif; /* Updated to a more standard font */
-    color: var(--secondary-color); /* Modern blue for a luxurious feel */
-    font-weight: 400;
-    transition: all 0.3s ease-in-out;
-    position: relative;
-    text-decoration: none;
-    
-}
-
-a:hover {
-    color: var(--primary-color);
     font-weight: 500;
+    font-size: 0.96rem;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
 }
 
-a:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
-    background-image: url('icon-path.svg'); /* Custom icon for each link */
-    background-size: cover;
-    transition: all 0.3s ease-in-out;
+.site-nav a:hover,
+a:hover {
+    border-color: var(--text);
 }
 
-a:hover:before {
-    transform: translateY(-50%) scale(1.1);
+main.site-shell {
+    padding: 2.2rem 0 3rem;
 }
 
-/* Central text area styles */
-.central-text {
-    background: var(--card-background-color);
-    color: var(--primary-color);
-    max-width: 800px; /* Set the max-width for the central text */
-    margin: 2rem auto; /* Centers the block with automatic horizontal margins */
-    padding: 1rem;
-    border-radius: 10px; /* Optional rounded corners */
+.content-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: clamp(1.25rem, 2vw, 2rem);
 }
 
-/* Footer styles */
-footer {
-    background-color: var(--card-background-color);
-    color: var(--primary-color);
-    text-align: center;
-    padding: 1rem 0;
-}
-
-/* Styles for the "About" section in the footer */
-.about-section {
-    padding: 1rem;
-    margin-top: 2rem;
-    border-top: 1px solid var(--secondary-color);
-}
-
-/* Ensure all the text aligns properly with your design */
-h1, h2, h3, ul, li {
-    font-family: 'Arial', sans-serif;
-    color: var(--primary-color);
-    text-align: center; /* Center text for a focused layout */
+h1, h2, h3 {
+    line-height: 1.2;
+    margin-top: 0;
 }
 
 p {
-    text-align: center; /* Center text for a focused layout */
-    font-family: 'Arial', sans-serif;
-    color: var(--primary-color);
-    }
+    margin: 0 0 1rem;
+    color: var(--muted);
+}
 
-/* Responsive Design: Adjustments for smaller screens */
-@media (max-width: 768px) {
-    .header-container {
+ul {
+    margin: 0.5rem 0 1.5rem 1.2rem;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.35rem;
+}
+
+.site-footer {
+    border-top: 1px solid var(--line);
+    padding: 2.5rem 0 1.5rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.site-footer h2 {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+}
+
+.site-footer p {
+    margin-bottom: 0.4rem;
+}
+
+.since {
+    text-align: center;
+    color: #7c7c7c;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+    .nav-shell {
         flex-direction: column;
+        align-items: flex-start;
     }
 
-    .menu-bar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .central-text, .about-section {
-        max-width: 90%; /* Allows more space on smaller screens */
+    .footer-grid {
+        grid-template-columns: 1fr;
     }
 }
