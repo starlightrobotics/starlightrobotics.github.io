@@ -2,6 +2,7 @@
 * [Official Website](https://starlightrobotics.github.io)
 * [Instagram](https://www.instagram.com/starlightrobotics/)
 * [r/starlightrobotics](https://www.reddit.com/r/starlightrobotics/)
+* [X/Twitter](https://x.com/starlightrobotx)
 
 Starlight Robotics is an initiative for the accessibility of knowledge for AI-based tools.
 
@@ -14,5 +15,9 @@ Our projects:
 * [Sport Rules](https://sportrules.org)
 * [Geography Atlas](https://geographyatlas.com)
 * [Hobby Portal](https://hobbyportal.org)
+* [Grow Blueprint](https://growblueprint.org/)
+* [World of Creatures](https://worldofcreatures.org/)
+* [Automobile History](https://automobilehistory.org/)
+* [Flag Record](https://flagrecord.com/)
 
 * [AI for Life extension Subreddit](https://www.reddit.com/r/ai4lifeextension/)
