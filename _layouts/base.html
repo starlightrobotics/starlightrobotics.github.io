@@ -1,51 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starlight Robotics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Starlight Robotics curates accessible reference libraries for curious people.">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}Starlight Robotics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="/styles.css" rel="stylesheet">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+    <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}" type="image/x-icon">
 </head>
 <body>
     <header class="site-header">
         <div class="site-shell nav-shell">
-            <a class="brand" href="/index.html" aria-label="Starlight Robotics home">
-                <img src="/images/logo_black.png" alt="Starlight Robotics logo">
+            <a class="brand" href="{{ '/' | relative_url }}" aria-label="Starlight Robotics home">
+                <img src="{{ '/images/logo.png' | relative_url }}" alt="Starlight Robotics">
             </a>
-            <nav class="site-nav" aria-label="Primary">
-                <a href="/index.html">Home</a>
-                <a href="/projects.html">Projects</a>
-                <a href="/about.html">About</a>
-                <a href="https://starlighttools.org/">Starlight Tools</a>
-                <a href="https://www.reddit.com/r/starlightrobotics/">Community</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <a href="{{ '/projects.html' | relative_url }}">Libraries</a>
+                <a href="{{ '/about.html' | relative_url }}">About</a>
+                <a class="nav-cta" href="https://www.reddit.com/r/starlightrobotics/">Community <span aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
 
-    <main class="site-shell">
-        <section class="content-card">
-            {{ content }}
-        </section>
+    <main>
+        {{ content }}
     </main>
 
     <footer class="site-footer">
         <div class="site-shell footer-grid">
-            <section>
-                <h2>About</h2>
-                <p>Starlight Robotics is an open digital automation and robotics initiative sharing practical tools, projects, and community knowledge.</p>
-            </section>
-            <section>
-                <h2>Contact</h2>
-                <p>Instagram: <a href="https://www.instagram.com/starlightrobotics/" target="_blank" rel="noreferrer">@starlightrobotics</a></p>
-                <p>X: <a href="https://twitter.com/starlightrobotx" target="_blank" rel="noreferrer">@starlightrobotx</a></p>
-                <p>Reddit: <a href="https://www.reddit.com/r/starlightrobotics/" target="_blank" rel="noreferrer">r/starlightrobotics</a></p>
-            </section>
+            <div>
+                <a class="footer-mark" href="{{ '/' | relative_url }}">Starlight Robotics</a>
+                <p>Independent reference libraries for exploring knowledge, one useful page at a time.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/starlightrobotics/">Instagram</a>
+                <a href="https://twitter.com/starlightrobotx">X / Twitter</a>
+                <a href="https://www.reddit.com/r/starlightrobotics/">Reddit</a>
+            </div>
         </div>
-        <p class="since">Since 2023</p>
+        <div class="site-shell footer-base">
+            <span>© 2023–{{ 'now' | date: '%Y' }} Starlight Robotics</span>
+            <span>Explore · Discover · Shine</span>
+        </div>
     </footer>
 </body>
 </html>
